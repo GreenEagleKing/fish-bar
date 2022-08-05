@@ -1,0 +1,179 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html{
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  color: rgb(43, 42, 42);
+  margin: 0px 5%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  font-weight: 700;
+  font-size: 5rem;
+  color: white;
+  line-height: 7rem;
+  margin: 0px;
+}
+
+h2{
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+h3{
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+ul, li{
+  text-decoration: none;
+  list-style: none;
+  padding-left: .5rem;
+}
+
+.welcomeContainer{
+  /* border: 2px solid red; */
+  margin-bottom: 5%;
+}
+
+.welcome{
+  background: url("../img/fishBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  height: 600px;
+}
+
+.welcome h1{
+  display: flex;
+  justify-content: flex-end;
+  padding: 120px;
+}
+
+
+nav{
+  /* border: 2px solid pink; */
+  display: flex;
+  justify-content: flex-end;
+  gap: 80px;
+  padding: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(43, 42, 42);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.aboutUsContainer{
+  /* border: 2px solid blue; */
+  padding-left: 7rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutUsImageContainer{
+  /* border: 2px solid teal; */
+  background-image: url("../img/fishAndChips.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  width: 60vw;
+  height: 500px;
+}
+
+.ourMenuContainer{
+  /* border: 2px solid orange; */
+  
+}
+
+.ourMenuContainer h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.menuContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 400px;
+  text-decoration: none;
+  height: 40vh;
+}
+
+.fish{
+  display: flex;
+  flex-direction: column;
+}
+
+.fishPrices {
+  display: flex;
+  flex-direction: row;
+}
+
+.openingAndContactContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25%;
+}
+
+.openingHoursContainer{
+  /* border: 2px solid purple; */
+}
+
+.timesContainer{
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+}
+
+.contactContainer{
+  /* border: 2px solid green; */
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
