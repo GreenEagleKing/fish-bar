@@ -56,13 +56,16 @@ h3{
 ul, li{
   text-decoration: none;
   list-style: none;
-  padding-left: .5rem;
+  padding-left: 0px;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
 }
 
 .welcomeContainer{
   /* border: 2px solid red; */
   margin-bottom: 5%;
 }
+
 
 .welcome{
   background: url("../img/fishBackground.jpg");
@@ -72,10 +75,20 @@ ul, li{
   height: 600px;
 }
 
-.welcome h1{
+.welcomeText {
   display: flex;
-  justify-content: flex-end;
-  padding: 120px;
+  flex-direction: column;
+  margin-left: 58%;
+}
+
+.welcome h1{
+  margin-top: 100px;
+}
+
+.welcome h4{
+  color: white;
+  margin: 10px 0px;
+  padding-left: 10px;
 }
 
 
@@ -85,6 +98,7 @@ nav{
   justify-content: flex-end;
   gap: 80px;
   padding: 15px;
+  align-items: center;
 }
 
 nav a {
@@ -94,11 +108,22 @@ nav a {
   font-weight: 600;
 }
 
+nav img{
+  height: 150px;
+  margin-right: auto;
+  margin-left: 5%;
+}
+
+
 .aboutUsContainer{
   /* border: 2px solid blue; */
   padding-left: 7rem;
   display: flex;
   flex-direction: row;
+}
+
+.aboutUsTextContainer {
+  width: 75%;
 }
 
 .aboutUsImageContainer{
@@ -112,39 +137,55 @@ nav a {
 }
 
 .ourMenuContainer{
-  /* border: 2px solid orange; */
-  
+  margin-top: 5%;
 }
 
-.ourMenuContainer h2 {
+.ourMenuContainer h2, #rope {
   display: flex;
   justify-content: center;
+}
+
+#rope{
+  height: 150px;
+  margin: auto;
+}
+
+#longRope{
+  width: 100px;
+  height: 100px;  
 }
 
 .menuContainer{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 400px;
+  gap: 100px;
   text-decoration: none;
-  height: 40vh;
+  height: 500px;
 }
 
-.fish{
+.foodAndPrice{
+  font-size: 1.3rem;
+}
+
+.fish, .pies, .chips{
   display: flex;
   flex-direction: column;
 }
 
-.fishPrices {
+.fishPrices, .piePrices, .chipPrices {
   display: flex;
   flex-direction: row;
 }
+
 
 .openingAndContactContainer{
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 25%;
+  background-color: black;
+  color: white;
 }
 
 .openingHoursContainer{
@@ -158,8 +199,15 @@ nav a {
   justify-content: center;
 }
 
-.contactContainer{
-  /* border: 2px solid green; */
+.contactInfo li{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+}
+
+.contactInfo h4, p {
+  margin: 40px 20px 0px 0px
 }
 
 
