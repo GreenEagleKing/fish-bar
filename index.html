@@ -13,15 +13,17 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
 	</head>
+
 	<body>
-		<section class="welcomeContainer">
+		<main>
+		<section class="welcomeContainer" id="home">
 			
 			<nav>
-				<img src="../restaurant/img/noun-fish-1107654.png">
-				<a href="#">Home</a>
-				<a href="#">About</a>
-				<a href="#">Menu</a>
-				<a href="#">Contact</a>
+				<img src="../restaurant/img/Logo with text.png">
+				<a class="link" href="#home">Home</a>
+				<a class="link" href="#about">About</a>
+				<a class="link" href="#menu">Menu</a>
+				<a class="link" href="#contact">Contact</a>
 			</nav>
 
 			<section class="welcome">
@@ -33,7 +35,7 @@
 		</section>
 
 
-		<section class="aboutUsContainer">
+		<section class="aboutUsContainer" id="about">
 			<section class="aboutUsInfoContainer">
 				<h4>About Us</h4>
 				<h2>Serving Fresh Fish Since 1989</h2>
@@ -46,9 +48,9 @@
 			<section class="aboutUsImageContainer"></section>
 		</section>
 
-		<section class="ourMenuContainer">
+		<section class="ourMenuContainer" id="menu">
+			<img id="rope" src="../restaurant/img/rope line break.png">
 			<h2>Our Menu</h2>
-			<img id="rope" src="../restaurant/img/noun-rope-1120005.png">
 			<section class="menuContainer">
 				<section class="fish">
 					<h3>Fish</h3>
@@ -71,7 +73,7 @@
 						</ul>
 				</section>
 				</section>
-				<img id="longRope" src="../restaurant/img/noun-rope-long.png">
+				<img id="longRope" src="../restaurant/img/vertical rope.png">
 				<section class="pies">
 					<h3>Pies & Sausage</h3>
 						<section class="piePrices">
@@ -93,7 +95,7 @@
 						</ul>
 					</section>
 				</section>
-				<img id="longRope" src="../restaurant/img/noun-rope-long.png">
+				<img id="longRope" src="../restaurant/img/vertical rope.png">
 				<section class="sides">
 					<h3>Chips & Sides</h3>
 					<section class="chipPrices">
@@ -119,42 +121,55 @@
 				</section>
 			</section>
 		</section>
+		</main>
 
-		<section class="openingAndContactContainer">
-			<section class="openingHoursContainer">
-				<h2>Opening Hours</h2>
-				<section class="timesContainer">
-					<ul>
-						<li>Sunday</li>
-						<li>Monday</li>
-						<li>Tuesday</li>
-						<li>Wednesday</li>
-						<li>Thursday</li>
-						<li>Friday</li>
-						<li>Saturday</li>
-					</ul>
-					<ul>
-						<li>11:30 am to 08:00 pm</li>
-						<li>11:30 am to 08:00 pm</li>
-						<li>11:30 am to 10:00 pm</li>
-						<li>11:30 am to 10:00 pm</li>
-						<li>11:30 am to 10:00 pm</li>
-						<li>11:30 am to 10:30 pm</li>
-						<li>11:30 am to 10:30 pm</li>
-					</ul>
-			</section>
-			</section>
+		<footer>
 
-			<section class="contactContainer">
-				<h2>Contact Us</h2>
-				<section class="contactInfo">
-					<ul>
-						<li><h4>Address : </h4><p>116A WESTERN ROAD,<br> BRIGHTON, SUSSEX,<br> BN1 2AB</p></li>
-						<li><h4>Phone Number :</h4><p>01273 328267</p></li>
-						<li><h4>Email :</h4><p>customerservice@tcg-ltd.co.uk</p></li>
-					</ul>
+			<section class="openingAndContactContainer" id="contact">
+				<section class="openingHoursContainer">
+					<h2>Opening Hours</h2>
+					<section class="timesContainer">
+						<ul>
+							<li>Sunday</li>
+							<li>Monday</li>
+							<li>Tuesday</li>
+							<li>Wednesday</li>
+							<li>Thursday</li>
+							<li>Friday</li>
+							<li>Saturday</li>
+						</ul>
+						<ul>
+							<li>11:30 am to 08:00 pm</li>
+							<li>11:30 am to 08:00 pm</li>
+							<li>11:30 am to 10:00 pm</li>
+							<li>11:30 am to 10:00 pm</li>
+							<li>11:30 am to 10:00 pm</li>
+							<li>11:30 am to 10:30 pm</li>
+							<li>11:30 am to 10:30 pm</li>
+						</ul>
+					</section>
 				</section>
-		</section>
+	
+				<section class="contactContainer">
+					<h2>Contact Us</h2>
+					<section class="contactInfo">
+						<ul>
+							<li><h4>Address : </h4><p>116A WESTERN ROAD,<br> BRIGHTON, SUSSEX,<br> BN1 2AB </p></li>
+							<li><h4>what3words address :</h4><a href="https://what3words.com/full.avoid.robot" target="_blank" translate="no">///full.avoid.robot</a></li>
+							<li><h4>Phone Number :</h4><p>01273 328267</p></li>
+							<li><h4>Email :</h4><p>customerservice@tcg-ltd.co.uk</p></li>
+						</ul>
+					</section>
+				</section>
+	
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14255.577369105476!2d-0.14528647031602768!3d50.83016633152233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1660044547956!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					
+			</section>
+			<div id="copyright">
+				<p>Copyright © 2022 Ben King. All Rights Reserved.</p>
+			</div>
+
+		</footer>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>

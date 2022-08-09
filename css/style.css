@@ -27,12 +27,20 @@ html{
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   color: rgb(43, 42, 42);
+  
+}
+
+main {
+  display: flex;
+  flex-direction: column;
   margin: 0px 5%;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
+footer {
+  margin: 0px 0px;
+  width: 100%;
+  background-color: black;
+  color: white;
 }
 
 h1{
@@ -68,11 +76,24 @@ ul, li{
 
 
 .welcome{
-  background: url("../img/fishBackground.jpg");
+  /* background: url("../img/fishBackground.jpg"); */
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   height: 600px;
+  animation: animate 15s ease-in-out infinite;
+}
+
+@keyframes animate{
+  0%, 100%{
+    background-image: url("../img/fishBackground.jpg");
+  }
+  33%{
+    background-image: url("../img/pieBG.jpg");
+  }
+  66%{
+    background-image: url("../img/sardinesBG.jpg");
+  }
 }
 
 .welcomeText {
@@ -101,6 +122,26 @@ nav{
   align-items: center;
 }
 
+.link{
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 5px;
+}
+.link::after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgb(87, 112, 223);
+  transition: width 0.4s ease-out;
+}
+
+.link:hover.link::after{
+  width: 100%;
+}
+
 nav a {
   text-decoration: none;
   color: rgb(43, 42, 42);
@@ -109,7 +150,7 @@ nav a {
 }
 
 nav img{
-  height: 150px;
+  height: 100px;
   margin-right: auto;
   margin-left: 5%;
 }
@@ -145,21 +186,26 @@ nav img{
   justify-content: center;
 }
 
+.ourMenuContainer h2{
+  margin-bottom: 30px;
+}
+
 #rope{
-  height: 150px;
+  height: 50px;
   margin: auto;
+  margin-bottom: 8%;
 }
 
 #longRope{
-  width: 100px;
-  height: 100px;  
+  height: 400px;
+  margin-right: 50px;  
 }
 
 .menuContainer{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 100px;
+  gap: 50px;
   text-decoration: none;
   height: 500px;
 }
@@ -183,19 +229,14 @@ nav img{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 25%;
-  background-color: black;
-  color: white;
-}
-
-.openingHoursContainer{
-  /* border: 2px solid purple; */
+  gap: 3%;
+  margin-top: 3%;
+  padding-top: 3%;
 }
 
 .timesContainer{
   display: flex;
   flex-direction: row;
-
   justify-content: center;
 }
 
@@ -206,10 +247,32 @@ nav img{
   padding: 0px;
 }
 
-.contactInfo h4, p {
-  margin: 40px 20px 0px 0px
+.contactInfo h4, p{
+  margin: 0px 20px 40px 0px;
 }
 
+.contactInfo p{
+  display: flex;
+  margin-left: auto;
+}
+
+.contactInfo a{
+  color: red;
+  text-decoration: none;
+}
+
+iframe{
+  margin: 2%;
+  height: 350px;
+  width: 350px;
+}
+
+#copyright p{
+  margin-bottom: 0px;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
 
 /******************************************
 /* LAYOUT
