@@ -1,7 +1,3 @@
-/* Box Model Hack */
-* {
-  box-sizing: border-box;
-}
 
 /* Clear fix hack */
 .clearfix:after {
@@ -18,28 +14,37 @@
 }
 
 
+/* desktop: 1200px;
+laptop: 992px;
+tablet: 768px;
+mobile: 480px; */
+
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
 
-html{
+body ,html{
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   color: rgb(43, 42, 42);
+  display: flex;
+  flex-direction: column;
   
 }
 
 main {
-  display: flex;
   flex-direction: column;
-  margin: 0px 5%;
+  margin: 0% 5%;
 }
 
 footer {
   margin: 0px 0px;
   width: 100%;
-  background-color: black;
+  background-image: url("../img/slateBG.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
 }
 
@@ -69,31 +74,21 @@ ul, li{
   padding-bottom: 1rem;
 }
 
+img{
+  max-width: 100%;
+}
+
 .welcomeContainer{
-  /* border: 2px solid red; */
   margin-bottom: 5%;
 }
 
 
 .welcome{
-  /* background: url("../img/fishBackground.jpg"); */
+  background: url("../img/fishBackground.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 600px;
-  animation: animate 15s ease-in-out infinite;
-}
-
-@keyframes animate{
-  0%, 100%{
-    background-image: url("../img/fishBackground.jpg");
-  }
-  33%{
-    background-image: url("../img/pieBG.jpg");
-  }
-  66%{
-    background-image: url("../img/sardinesBG.jpg");
-  }
+  min-height: 600px;
 }
 
 .welcomeText {
@@ -103,7 +98,7 @@ ul, li{
 }
 
 .welcome h1{
-  margin-top: 100px;
+  margin-top: 15%;
 }
 
 .welcome h4{
@@ -114,32 +109,12 @@ ul, li{
 
 
 nav{
-  /* border: 2px solid pink; */
   display: flex;
+  flex-direction: row;
   justify-content: flex-end;
   gap: 80px;
   padding: 15px;
   align-items: center;
-}
-
-.link{
-  cursor: pointer;
-  position: relative;
-  padding-bottom: 5px;
-}
-.link::after{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  content: "";
-  width: 0%;
-  height: 3px;
-  background-color: rgb(87, 112, 223);
-  transition: width 0.4s ease-out;
-}
-
-.link:hover.link::after{
-  width: 100%;
 }
 
 nav a {
@@ -153,28 +128,46 @@ nav img{
   height: 100px;
   margin-right: auto;
   margin-left: 5%;
+  padding: 1rem 0rem;
 }
 
+.link{
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 5px;
+}
+  .link::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgb(46, 96, 146);
+    transition: width 0.4s ease-out;
+  }
+
+  .link:hover.link::after{
+  width: 100%;
+}
 
 .aboutUsContainer{
-  /* border: 2px solid blue; */
-  padding-left: 7rem;
+  padding-left: 2rem;
   display: flex;
   flex-direction: row;
 }
 
-.aboutUsTextContainer {
+.aboutUsInfoContainer {
   width: 75%;
+  padding-right: 2%;
 }
 
 .aboutUsImageContainer{
-  /* border: 2px solid teal; */
   background-image: url("../img/fishAndChips.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   width: 60vw;
-  height: 500px;
 }
 
 .ourMenuContainer{
@@ -187,27 +180,27 @@ nav img{
 }
 
 .ourMenuContainer h2{
-  margin-bottom: 30px;
+  margin-bottom: 1.5rem;
 }
 
 #rope{
   height: 50px;
   margin: auto;
-  margin-bottom: 8%;
+  margin-bottom: 6%;
 }
 
 #longRope{
-  height: 400px;
-  margin-right: 50px;  
+  height: 27rem;
+  margin-right: 5%;  
 }
 
 .menuContainer{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 50px;
+  gap: 5%;
   text-decoration: none;
-  height: 500px;
+  min-height: 500px;
 }
 
 .foodAndPrice{
@@ -229,7 +222,7 @@ nav img{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 3%;
+  gap: 8%;
   margin-top: 3%;
   padding-top: 3%;
 }
@@ -274,17 +267,26 @@ iframe{
   justify-content: center;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
-header {
-
-}
-
-footer {
-
-}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media (max-width: 992px) {
+
+  nav{
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .ourMenuContainer, .menuContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #longRope{
+    display: none;
+  }
+
+}
