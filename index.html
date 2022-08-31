@@ -4,12 +4,12 @@
   	<meta charset="utf-8">
   	<meta name="description" content="Your description goes here">
   	<meta name="keywords" content="one, two, three">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 		
 		<title>Fish Bar</title>
 
 		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
 	</head>
@@ -17,14 +17,15 @@
 	<body>
 		<main>
 		<section class="welcomeContainer" id="home">
-			
-			<nav>
-				<img src="../restaurant/img/Logo with text.png">
-				<a class="link" href="#home">Home</a>
-				<a class="link" href="#about">About</a>
-				<a class="link" href="#menu">Menu</a>
-				<a class="link" href="#contact">Contact</a>
-			</nav>
+			<section id="navContainer" >
+				<img id="logo" src="../restaurant/img/Logo with text.png">
+				<nav>
+					<a class="link" href="#home">Home</a>
+					<a class="link" href="#about">About</a>
+					<a class="link" href="#menu">Menu</a>
+					<a class="link" href="#contact">Contact</a>
+				</nav>
+			</section>
 
 			<section class="welcome">
 				<section class="welcomeText">
@@ -45,7 +46,7 @@
 					<p>This is classic British food at its best. Succulent fish wrapped in crispy batter. Fluffy, authentic ‘chip-shop’ chips. Mrs Davis' home-made pickles and cakes. Whether you eat in or take away, Magna Fish Bar is a friendly and relaxed dining experience where it’s the food that steals the show.</p>
 				</section>
 			</section>
-			<section class="aboutUsImageContainer"></section>
+			<img id="aboutUsImage" src="../restaurant/img/fishAndChips.jpg"></img>
 		</section>
 
 		<section class="ourMenuContainer" id="menu">
@@ -125,7 +126,7 @@
 
 		<footer>
 
-			<section class="openingAndContactContainer" id="contact">
+			<section id="contact">
 				<section class="openingHoursContainer">
 					<h2>Opening Hours</h2>
 					<section class="timesContainer">

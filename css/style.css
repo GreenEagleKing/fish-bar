@@ -27,10 +27,7 @@ mobile: 480px; */
 body ,html{
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
-  color: rgb(43, 42, 42);
-  display: flex;
-  flex-direction: column;
-  
+  color: rgb(43, 42, 42);  
 }
 
 main {
@@ -46,6 +43,12 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+}
+
+#logo{
+  max-width: 15%;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 h1{
@@ -74,45 +77,21 @@ ul, li{
   padding-bottom: 1rem;
 }
 
-img{
-  max-width: 100%;
-}
-
 .welcomeContainer{
   margin-bottom: 5%;
 }
 
-
-.welcome{
-  background: url("../img/fishBackground.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  min-height: 600px;
-}
-
-.welcomeText {
+#navContainer{
   display: flex;
-  flex-direction: column;
-  margin-left: 58%;
+  justify-content: space-between;
+  margin: 1rem;
 }
-
-.welcome h1{
-  margin-top: 15%;
-}
-
-.welcome h4{
-  color: white;
-  margin: 10px 0px;
-  padding-left: 10px;
-}
-
 
 nav{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  gap: 80px;
+  gap: 3rem;
   padding: 15px;
   align-items: center;
 }
@@ -124,11 +103,30 @@ nav a {
   font-weight: 600;
 }
 
-nav img{
-  height: 100px;
-  margin-right: auto;
-  margin-left: 5%;
-  padding: 1rem 0rem;
+.welcome{
+  background: url("../img/fishBackground.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 50vh;
+}
+
+.welcomeText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 58%;
+
+}
+
+.welcome h1{
+  margin-top: 3rem;
+}
+
+.welcome h4{
+  color: white;
+  margin: 10px 0px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .link{
@@ -159,15 +157,20 @@ nav img{
 
 .aboutUsInfoContainer {
   width: 75%;
-  padding-right: 2%;
+  padding-right: 4%;
 }
 
-.aboutUsImageContainer{
-  background-image: url("../img/fishAndChips.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 60vw;
+.aboutUsTextContainer p{
+  padding-bottom: 2rem;
+}
+
+.aboutUsContainer h2{
+  padding: 1.5rem 0rem;
+}
+
+#aboutUsImage{
+  max-width: 40%;
+  height: auto;
 }
 
 .ourMenuContainer{
@@ -184,7 +187,7 @@ nav img{
 }
 
 #rope{
-  height: 50px;
+  max-width: 8%;
   margin: auto;
   margin-bottom: 6%;
 }
@@ -198,9 +201,12 @@ nav img{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 5%;
   text-decoration: none;
   min-height: 500px;
+}
+
+.menuContainer h3 {
+  padding: 2rem 0rem;
 }
 
 .foodAndPrice{
@@ -212,19 +218,23 @@ nav img{
   flex-direction: column;
 }
 
+
 .fishPrices, .piePrices, .chipPrices {
   display: flex;
   flex-direction: row;
 }
 
 
-.openingAndContactContainer{
+#contact{
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  gap: 8%;
+  justify-content: space-around;
   margin-top: 3%;
   padding-top: 3%;
+}
+
+#contact h2{
+  padding: 2rem 0rem;
 }
 
 .timesContainer{
@@ -237,10 +247,10 @@ nav img{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0px;
+  padding-bottom: 1rem;
 }
 
-.contactInfo h4, p{
+.contactInfo h4 {
   margin: 0px 20px 40px 0px;
 }
 
@@ -272,21 +282,156 @@ iframe{
 /* ADDITIONAL STYLES
 /*******************************************/
 
-@media (max-width: 992px) {
+@media (max-width: 900px) {
+
+  body, html {
+    display: block;
+    font-size: 12px;
+    min-height: 100vh;
+    flex-direction: column;
+    position: sticky;
+    margin: 0;
+  }
+
+  main{
+    overflow-x: hidden;
+    width: 90%;
+    margin: 0px 5%;
+  }
+
+  h1{
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  
+  h2{
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  
+  h3{
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  
+  ul, li{
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .welcome{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 30vh;
+  }
+
+  .welcome h4{
+    padding-left: 0px;
+    padding-right: 10px;
+  }
+
+  #navContainer{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #logo{
+    align-self: center;
+    max-width: 30%;
+  }
 
   nav{
-    flex-direction: column;
+    flex-direction: row;
     gap: 2rem;
+    justify-content: center;
+  }
+
+  .aboutUsInfoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding: 0%;
+  }
+
+  .aboutUsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0%;
+  }
+
+  #aboutUsImage{
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .aboutUsTextContainer{
+    align-self: center;
+    max-width: 70%;
+  }
+
+  .aboutUsTextContainer p{
+    margin-right: 0%  ;
+    padding-top: 2rem;
+    
   }
 
   .ourMenuContainer, .menuContainer{
     display: flex;
     flex-direction: column;
+    text-align: center  ;
+  }
+
+  .menuContainer ul{
+    padding: 0%;
+    text-align: center;
+  }
+
+  .fishPrices, .piePrices, .chipPrices{
+    display: flex;
     justify-content: center;
+
   }
 
   #longRope{
     display: none;
+  }
+
+  footer{
+    padding: 0%;
+  }
+
+  #contact{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #contact h2{
+    text-align: center;
+  }
+
+  .contactContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactInfo{
+    display: flex;
+    padding: 0px;
+  }
+
+  iframe{
+    align-self: center;
+  }
+
+  .openingAndContactContainer{
+    flex-direction: column;
+    margin-top: 3%;
+    padding-top: 3%;
   }
 
 }
