@@ -298,8 +298,8 @@ iframe{
 
   main{
     overflow-x: hidden;
-    width: 90%;
-    margin: 0px 5%;
+    width: 100%;
+    margin: 0px 0%;
   }
 
   h1{
