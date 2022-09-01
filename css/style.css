@@ -51,6 +51,10 @@ footer {
   margin-bottom: 1rem;
 }
 
+p{
+  line-height: 2rem;
+}
+
 h1{
   font-weight: 700;
   font-size: 5rem;
@@ -304,8 +308,8 @@ iframe{
 
   h1{
     font-weight: 700;
-    font-size: 2.5rem;
-    line-height: 3rem;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
   }
   
   h2{
@@ -421,6 +425,10 @@ iframe{
   .contactInfo{
     display: flex;
     padding: 0px;
+  }
+
+  .contactInfo li{
+    gap: 3rem;
   }
 
   iframe{
