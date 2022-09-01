@@ -259,6 +259,7 @@ nav a {
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 3rem;
 }
 
 .contactInfo p{
@@ -425,10 +426,6 @@ iframe{
   .contactInfo{
     display: flex;
     padding: 0px;
-  }
-
-  .contactInfo li{
-    gap: 3rem;
   }
 
   iframe{
