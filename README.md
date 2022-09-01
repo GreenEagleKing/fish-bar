@@ -3,7 +3,7 @@
 A fully designed website for Magna Fish Bar. A place for users to quickly see whi they are what they have to offer, including a menu and contact info.
 
 <p align="center">
-  <img width="600" src="https://github.com/GreenEagleKing/nasa-rover/blob/main/curiosity-rover-gif">
+  <img width="600" src="https://github.com/GreenEagleKing/fish-bar/blob/main/magna-fish-bar.gif?raw=true">
 </p>
 
 # How It's Made:
